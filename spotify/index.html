@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify-Home</title>
+        <link rel="stylesheet" href="style/main.css">
+        <script src="style/main.js"></script>
+    </head>
+</head>
+<body>
+
+<!-- Top navigation -->
+<div class="topnav" >
+
+    <!-- Centered link -->
+    <div class="topnav-centered">
+      <a href="#home" class="active">Home</a>
+    </div>
+  
+    <!-- Left-aligned links (default) -->
+    <a href="https://www.spotify.com/us/">Spotify</a>
+    <a href="#">Contact</a>
+  
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+      <a href="#">Search</a>
+      <a href="about.html">About Us</a>
+    </div>
+  
+  </div>
+
+
+       <header class="header">
+           
+            <div class="logo_div">
+               <img class="logo_image" src="style/Spotify-Header.png" alt="spotify banner">
+           </div>
+
+           <div class="headings">
+               <h1 class="primary_header">
+                    <span class="primary_header_title">Spotify Song Suggester</span>
+               </h1>
+           </div>
+
+       </header> 
+                <div class="section_text">
+                    <p>Need new music in your life?  Well come on in and let our Data engineers curate the perfect playlist based off of your own tracks</p>
+                </div> 
+            </div> 
+        </section>
+
+<!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="style/spotify_avatar.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
